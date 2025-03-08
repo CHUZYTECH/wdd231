@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Course Home Page for WDD231">
+        <meta name="author" content="Oko Samuel Ogbonnia">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Course Home Page</title>
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="styles/style.css">
+    </head>
+    <body>
+        <header>
+            <img src="images/oko_samuel_ogbonnia.png" alt="Oko Samuel Ogbonnia"
+                class="profile-pic">
+            <span><h1 class="profile_name">Oko Samuel Ogbonnia</h1></span>
+            <button id="menu-toggle">☰</button>
+        </header>
+
+        <nav>
+            <ul id="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="#">Chamber</a></li>
+                <li><a href="https://github.com/CHUZYTECH">GitHub
+                        Profile</a></li>
+                <li><a
+                        href="https://www.linkedin.com/in/okosamuelogbonnia/">LinkedIn</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div><h1>Home</h1></div>
+            <aside class="course-section">
+                <div class="card1">
+                    <h2>Course Work</h2>
+                    <div class="card-content1">
+                        <ul class="courese_work">
+                            <p><li> WDD 231 - Web Frontend Development credits:
+                                    3</li> </p>
+
+                            <p><li>CSE 110 - Programming Principles credits:
+                                    3</li></p>
+
+                            <p><li>WDD 131 - Software Development credits:
+                                    3</li></p>
+
+                            <p><li> CSE 111 - Software Development credits:
+                                    3</li></p>
+
+                            <p><li>CSE 210 - Software Development credits:
+                                    3</li></p>
+
+                            <p><li>WDD 130 - Web Fundamentals credits:
+                                    3</li></p>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="card1">
+                    <h2>Department</h2>
+                    <div class="card1-content1">
+                        <img src="images/famel_programer.png"
+                            alt="Department Image">
+                        <p>Software Development</p>
+                    </div>
+                </div>
+            </aside>
+
+            <section class="card2">
+                <h2>Web and Computer Programming Certificate</h2>
+
+                <div class="filters">
+                    <button onclick="filterCourses('all')">All Courses</button>
+                    <button onclick="filterCourses('WDD')">WDD Courses</button>
+                    <button onclick="filterCourses('CSE')">CSE Courses</button>
+                </div>
+
+                <hr>
+
+                <div id="courses-container"></div>
+
+                <p>Total Credits: <span id="total-credits">0</span></p>
+            </section>
+
+        </main>
+
+        <footer>
+            <p>&copy; <span id="year"></span> Oko Samuel Ogbonnia | Ebonyi
+                State Nigeria
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg"
+                    alt="Nigerian Flag" width="30">
+            </p>
+            <p id="lastUpdate"></p>
+        </footer>
+
+        <script src="scripts/script.js"></script>
+    </body>
+</html>
