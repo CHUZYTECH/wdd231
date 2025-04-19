@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thank You</title>
+    <link rel="stylesheet" href="css/join.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Thank You for Joining!</h1>
+    </header>
+
+    <main class="container">
+        <div class="thankyou-wrapper">
+            <h2>We’ve received your application.</h2>
+            <div class="thankyou-details">
+                <p><strong>Full Name:</strong> <span id="displayName"></span></p>
+                <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+                <p><strong>Phone:</strong> <span id="displayPhone"></span></p>
+                <p><strong>Business Name:</strong> <span id="displayBusiness"></span></p>
+                <p><strong>Membership Level:</strong> <span id="displayLevel"></span></p>
+                <p><strong>Business Description:</strong> <span id="displayDescription"></span></p>
+                <p><strong>Submitted On:</strong> <span id="displayTimestamp"></span></p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="thank-you-footer">
+        <p>&copy; 2025 Chamber of Commerce. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        const data = JSON.parse(localStorage.getItem("membershipData"));
+
+        if (data) {
+            document.getElementById("displayName").textContent = data.fullName;
+            document.getElementById("displayEmail").textContent = data.email;
+            document.getElementById("displayPhone").textContent = data.phone;
+            document.getElementById("displayBusiness").textContent = data.businessName;
+            document.getElementById("displayLevel").textContent = data.membershipLevel;
+            document.getElementById("displayDescription").textContent = data.description;
+            document.getElementById("displayTimestamp").textContent = new Date(data.timestamp).toLocaleString();
+        } else {
+            document.querySelector(".thankyou-wrapper").innerHTML = "<p>No data found. Please fill out the form first.</p>";
+        }
+    </script>
+    <script src="chember.js/script.js"></script>
+</body>
+</html>
