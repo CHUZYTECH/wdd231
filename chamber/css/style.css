@@ -111,6 +111,52 @@ h1 {
     background-color: #D1A980;
 }
 
+/* ========= List Code ========= */
+.list {
+    display: flex;
+    flex-direction: column;
+
+    section {
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        margin: 0;
+        padding: 0.25rem;
+
+        &>* {
+            margin: 0 1rem;
+        }
+
+        img {
+            display: none;
+        }
+
+        h3 {
+            font-size: 1rem;
+        }
+
+        &:nth-child(even) {
+            background-color: #ccc;
+        }
+    }
+}
+
+section {
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 0.5rem;
+    background-color: #E5E0D8;
+    border-radius: 3px;
+
+    a {
+        font-family: Arial, sans-serif;
+        font-size: 0.85rem;
+        color: navy;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
 /* ========= DIRECTORY STYLES ========= */
 .grid {
     display: grid;
