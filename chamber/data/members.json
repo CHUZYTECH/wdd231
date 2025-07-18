@@ -1,0 +1,60 @@
+{
+  "members": [
+    {
+      "name": "BrightTech Solutions",
+      "address": "123 Innovation Ave, Downtown",
+      "phone": "+234-701-123-4567",
+      "website": "https://brighttech.com",
+      "image": "",
+      "membershipLevel": 3
+    },
+    {
+      "name": "GreenFarm Organics",
+      "address": "45 Healthy St, Eco District",
+      "phone": "+234-802-987-6543",
+      "website": "https://greenfarm.ng",
+      "image": "greenfarm.png",
+      "membershipLevel": 2
+    },
+    {
+      "name": "AfroStyle Fashion",
+      "address": "88 Trendy Rd, Fashion Hub",
+      "phone": "+234-803-123-7890",
+      "website": "https://afrostyle.com",
+      "image": "afrostyle.png",
+      "membershipLevel": 1
+    },
+    {
+      "name": "NaijaFix Tech Repairs",
+      "address": "12 Repair Lane, Tech City",
+      "phone": "+234-706-445-8899",
+      "website": "https://naijafix.com",
+      "image": "naijafix.png",
+      "membershipLevel": 2
+    },
+    {
+      "name": "FreshMart Groceries",
+      "address": "200 Market Way, Suburb",
+      "phone": "+234-704-334-2233",
+      "website": "https://freshmart.ng",
+      "image": "freshmart.png",
+      "membershipLevel": 1
+    },
+    {
+      "name": "Eazy Travels & Tours",
+      "address": "6 Airport Blvd, Travel Zone",
+      "phone": "+234-809-445-6677",
+      "website": "https://eazytravels.com",
+      "image": "eazytravels.png",
+      "membershipLevel": 3
+    },
+    {
+      "name": "Urban Developers Ltd.",
+      "address": "70 Builder's St, City Center",
+      "phone": "+234-808-778-9900",
+      "website": "https://urbandev.com",
+      "image": "urbandev.png",
+      "membershipLevel": 3
+    }
+  ]
+}
