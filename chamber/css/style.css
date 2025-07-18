@@ -118,14 +118,18 @@ h1 {
 }
 
 .list section {
-    display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
-    margin: 0;
-    padding: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem;
+    border-bottom: 1px solid #ccc;
+    word-break: break-word;
+    background-color: #E5E0D8;
+    border-radius: 3px;
 }
 
-.list section > * {
-    margin: 0 1rem;
+.list section>* {
+    margin: 0.25rem 0;
+    text-align: left;
 }
 
 .list section img {
@@ -140,17 +144,17 @@ h1 {
     background-color: #ccc;
 }
 
-section {
-    border: 1px solid rgb(0 0 0 / 10%);
-    padding: 0.5rem;
-    background-color: #E5E0D8;
-    border-radius: 3px;
-}
-
 section a {
     font-family: Arial, sans-serif;
     font-size: 0.85rem;
     color: navy;
+    word-break: break-word;
+}
+
+section p {
+    white-space: normal;
+    word-break: break-word;
+    overflow-wrap: break-word;
 }
 
 section h3 {
@@ -270,17 +274,6 @@ footer {
         width: 100%;
     }
 
-    .list section {
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .list section > * {
-        margin: 0.25rem 0 !important;
-        text-align: left;
-    }
-
     .grid section {
         padding: 0.5rem;
     }
@@ -302,4 +295,24 @@ footer {
         font-size: 1.2rem;
         margin: 0 0.3rem;
     }
+}
+
+/* ========= PROFESSIONAL DETAILS LINK STYLE ========= */
+section a {
+    display: inline-block;
+    padding: 0.3rem 0.5rem;
+    margin-top: 0.5rem;
+    background-color: #D1A980;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+section a:hover {
+    background-color: #D1A980;
+    transform: scale(1.03);
+    color: #fff;
 }
