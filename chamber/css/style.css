@@ -76,7 +76,7 @@ nav.show {
 main {
     margin: 25px auto;
     padding: 0.5rem;
-    max-width: 900px;
+    max-width: 800px;
     background-color: #F8F8F8;
 }
 
@@ -115,29 +115,29 @@ h1 {
 .list {
     display: flex;
     flex-direction: column;
+}
 
-    section {
-        display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
-        margin: 0;
-        padding: 0.25rem;
+.list section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    margin: 0;
+    padding: 0.25rem;
+}
 
-        &>* {
-            margin: 0 1rem;
-        }
+.list section > * {
+    margin: 0 1rem;
+}
 
-        img {
-            display: none;
-        }
+.list section img {
+    display: none;
+}
 
-        h3 {
-            font-size: 1rem;
-        }
+.list section h3 {
+    font-size: 1rem;
+}
 
-        &:nth-child(even) {
-            background-color: #ccc;
-        }
-    }
+.list section:nth-child(even) {
+    background-color: #ccc;
 }
 
 section {
@@ -145,16 +145,16 @@ section {
     padding: 0.5rem;
     background-color: #E5E0D8;
     border-radius: 3px;
+}
 
-    a {
-        font-family: Arial, sans-serif;
-        font-size: 0.85rem;
-        color: navy;
-    }
+section a {
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    color: navy;
+}
 
-    h3 {
-        font-size: 1.5rem;
-    }
+section h3 {
+    font-size: 1.5rem;
 }
 
 /* ========= DIRECTORY STYLES ========= */
@@ -271,12 +271,14 @@ footer {
     }
 
     .list section {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 0.5rem;
     }
 
-    .list section>* {
+    .list section > * {
         margin: 0.25rem 0 !important;
+        text-align: left;
     }
 
     .grid section {
