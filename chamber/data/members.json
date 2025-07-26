@@ -1,60 +1,84 @@
 {
   "members": [
     {
-      "name": "BrightTech Solutions",
-      "address": "123 Innovation Ave, Downtown",
-      "phone": "+234-701-123-4567",
-      "website": "https://brighttech.com",
-      "image": "",
-      "membershipLevel": 3
+      "name": "TechSolutionCrib",
+      "address": "Nottingham UK",
+      "phone": "07069746252",
+      "website": "https://techsolutioncrib.com",
+      "image": "images/techsolution_logo.jpg",
+      "membership": "Gold"
     },
     {
-      "name": "GreenFarm Organics",
-      "address": "45 Healthy St, Eco District",
-      "phone": "+234-802-987-6543",
-      "website": "https://greenfarm.ng",
-      "image": "greenfarm.png",
-      "membershipLevel": 2
+      "name": "WebGate VTU APP",
+      "address": "Nigeria",
+      "phone": "08144426681",
+      "website": "https://www.sabuss.com/webgate",
+      "image": "images/webgate_logo.jpg",
+      "membership": "Silver"
     },
     {
-      "name": "AfroStyle Fashion",
-      "address": "88 Trendy Rd, Fashion Hub",
-      "phone": "+234-803-123-7890",
-      "website": "https://afrostyle.com",
-      "image": "afrostyle.png",
-      "membershipLevel": 1
+      "name": "Linda Ikeji",
+      "address": "Nigeria",
+      "phone": "08060793756",
+      "website": "https://www.lindaikejisblog.com/",
+      "image": "images/lindaikeji.png",
+      "membership": "Bronze"
     },
     {
-      "name": "NaijaFix Tech Repairs",
-      "address": "12 Repair Lane, Tech City",
-      "phone": "+234-706-445-8899",
-      "website": "https://naijafix.com",
-      "image": "naijafix.png",
-      "membershipLevel": 2
+      "name": "RawHub",
+      "address": "Nigeria",
+      "phone": "09126244907",
+      "website": "https://www.rawtechgroups.com/",
+      "image": "images/rawhub.png",
+      "membership": "Gold"
     },
     {
-      "name": "FreshMart Groceries",
-      "address": "200 Market Way, Suburb",
-      "phone": "+234-704-334-2233",
-      "website": "https://freshmart.ng",
-      "image": "freshmart.png",
-      "membershipLevel": 1
+      "name": "Naijaloaded",
+      "address": "Nigeria",
+      "phone": "0803-456-7890",
+      "website": "https://www.naijaloaded.com/",
+      "image": "images/naijaloaded.webp",
+      "membership": "Silver"
     },
     {
-      "name": "Eazy Travels & Tours",
-      "address": "6 Airport Blvd, Travel Zone",
-      "phone": "+234-809-445-6677",
-      "website": "https://eazytravels.com",
-      "image": "eazytravels.png",
-      "membershipLevel": 3
+      "name": "TechCrunch",
+      "address": "Nigeria",
+      "phone": "07044337914",
+      "website": "https://www.techcrunch.com/",
+      "image": "images/techcrunch.png",
+      "membership": "Bronze"
     },
     {
-      "name": "Urban Developers Ltd.",
-      "address": "70 Builder's St, City Center",
-      "phone": "+234-808-778-9900",
-      "website": "https://urbandev.com",
-      "image": "urbandev.png",
-      "membershipLevel": 3
+      "name": "NotJustOk",
+      "address": "Nigeria",
+      "phone": "08034647929",
+      "website": "https://notjustok.com/",
+      "image": "images/notjustok.png",
+      "membership": "Gold"
+    },
+    {
+      "name": "Nairaland",
+      "address": "Nigeria",
+      "phone": "09034748938",
+      "website": "https://www.nairaland.com/",
+      "image": "images/nairaland.webp",
+      "membership": "Silver"
+    },
+    {
+      "name": "Legit",
+      "address": "Nigeria",
+      "phone": "08034858810",
+      "website": "https://www.legit.ng/",
+      "image": "images/legit.webp",
+      "membership": "Bronze"
+    },
+    {
+      "name": "Jumia Online Shopping",
+      "address": "Nigeria",
+      "phone": "070349580920",
+      "website": "https://www.jumia.com.ng",
+      "image": "images/jumia.png",
+      "membership": "Gold"
     }
   ]
 }
