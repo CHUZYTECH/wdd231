@@ -1,15 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <title>Thank You</title>
-    <link rel="stylesheet" href="css/join.css">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD231 | Thank You - Membership Application</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="author" content="Oko Samuel Ogbonnia" />
+    <meta name="description"
+        content="Thank you for your membership application. We’ve successfully received your details and will get back to you shortly." />
+    <meta name="keywords" content="Membership, Business Directory, Application Form, Thank You Page" />
+    <meta property="og:image" content="https://github.com/chuzytech.github.io/wdd231/chamber/images/preview.png" />
+    <meta property="og:url" content="https://github.com/chuzytech.github.io/wdd231/chamber/thankyou.html" />
+    <meta property="og:type" content="website" />
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/join.css" />
+
 </head>
+
 <body>
-    <header class="header">
-        <h1>Thank You for Joining!</h1>
+    <header>
+        <img src="images/byu_logo.png" alt="BYU-I Logo" width="50" height="50" />
+        <button id="hamburger" aria-label="Menu">&#9776;</button>
     </header>
 
+    <nav id="primaryNav" class="hide">
+        <a href="index.html" class="active">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+    </nav>
     <main class="container">
         <div class="thankyou-wrapper">
             <h2>We’ve received your application.</h2>
@@ -25,12 +59,8 @@
         </div>
     </main>
 
-    <footer class="thank-you-footer">
-        <p>&copy; 2025 Chamber of Commerce. All Rights Reserved.</p>
-    </footer>
-
     <script>
-        const data = JSON.parse(localStorage.getItem("membershipData"));
+        const data = JSON.parse(sessionStorage.getItem("membershipData"));
 
         if (data) {
             document.getElementById("displayName").textContent = data.fullName;
@@ -43,7 +73,35 @@
         } else {
             document.querySelector(".thankyou-wrapper").innerHTML = "<p>No data found. Please fill out the form first.</p>";
         }
+
     </script>
-    <script src="chember.js/script.js"></script>
+
+    <footer>
+        <div class="footer-icons">
+            <a href="https://linkedin.com/in/yourlinkedin" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/chuzytech" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://x.com/yourxusername" target="_blank" aria-label="X Twitter">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+        </div>
+
+        <p>
+            &copy; <span id="year"></span> Oko Samuel Ogbonnia | Ebonyi
+            State,
+            Nigeria
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg" alt="Nigerian Flag"
+                width="30" />
+        </p>
+        <p id="lastUpdate"></p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/join.js"></script>
 </body>
+
 </html>
