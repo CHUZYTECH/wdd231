@@ -1,201 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="Directory Page Page for WDD231" />
-        <meta name="author" content="Oko Samuel Ogbonnia" />
-        <title>Directory Page</title>
 
-        <!-- Open Graph / Facebook Meta Tags -->
-        <meta property="og:title"
-            content="Directory Page - Chamber of Commerce" />
-        <meta property="og:description"
-            content="Explore local businesses and organizations in our chamber directory." />
-        <meta property="og:image"
-            content="https://your-github-username.github.io/wdd231/chamber/images/preview.png" />
-        <meta property="og:url"
-            content="https://github.com/chuzytech.github.io/wdd231/chamber/directory.html" />
-        <meta property="og:type" content="website" />
+<head>
 
-        <!-- Google Fonts -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap"
-            rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WDD231 | Thank You - Membership Application</title>
 
-        <!-- Font Awesome Icons -->
-        <link rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <!-- SEO Meta Tags -->
+    <meta name="author" content="Oko Samuel Ogbonnia" />
+    <meta name="description"
+        content="Thank you for your membership application. We’ve successfully received your details and will get back to you shortly." />
+    <meta name="keywords" content="Membership, Business Directory, Application Form, Thank You Page" />
+    <meta property="og:image" content="https://github.com/chuzytech.github.io/wdd231/chamber/images/preview.png" />
+    <meta property="og:url" content="https://github.com/chuzytech.github.io/wdd231/chamber/thankyou.html" />
+    <meta property="og:type" content="website" />
 
-        <!-- Favicon -->
-        <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet" />
 
-        <!-- Stylesheets -->
-        <link rel="stylesheet" href="css/style.css" />
-    </head>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 
-    <body>
-        <header>
-            <img src="images/byu_logo.png" alt="BYU-I Logo" width="50"
-                height="50" />
-            <button id="hamburger" aria-label="Menu">&#9776;</button>
-        </header>
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
 
-        <nav id="primaryNav" class="hide">
-            <a href="directory.html" class="active">Home</a>
-            <a href="#">W1</a>
-            <a href="#">W2</a>
-            <a href="#">W3</a>
-            <a href="#">W4</a>
-            <a href="#">W5</a>
-            <a href="#">W6</a>
-            <a href="#">W7</a>
-        </nav>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/join.css" />
 
-        <main>
-            <h1>Business Directory</h1>
-            <div class="menu">
-                <div class="view-buttons">
-                    <button id="grid">Grid View</button>
-                    <button id="list">List View</button>
-                </div>
+</head>
+
+<body>
+    <header>
+        <img src="images/byu_logo.png" alt="BYU-I Logo" width="50" height="50" />
+        <button id="hamburger" aria-label="Menu">&#9776;</button>
+    </header>
+
+    <nav id="primaryNav" class="hide">
+        <a href="index.html" class="active">Home</a>
+        <a href="directory.html">Directory</a>
+        <a href="join.html">Join</a>
+    </nav>
+    <main class="container">
+        <div class="thankyou-wrapper">
+            <h2>We’ve received your application.</h2>
+            <div class="thankyou-details">
+                <p><strong>Full Name:</strong> <span id="displayName"></span></p>
+                <p><strong>Email:</strong> <span id="displayEmail"></span></p>
+                <p><strong>Phone:</strong> <span id="displayPhone"></span></p>
+                <p><strong>Business Name:</strong> <span id="displayBusiness"></span></p>
+                <p><strong>Membership Level:</strong> <span id="displayLevel"></span></p>
+                <p><strong>Business Description:</strong> <span id="displayDescription"></span></p>
+                <p><strong>Submitted On:</strong> <span id="displayTimestamp"></span></p>
             </div>
-            <section id="directory" class="grid-view"></section>
-        </main>
+        </div>
+    </main>
 
-        <main>
+    <script>
+        const data = JSON.parse(sessionStorage.getItem("membershipData"));
 
-            <article class="grid">
-                <section>
-                    <img src="images/techsolution_logo.jpg"
-                        alt="Techsolutioncrib" />
-                    <h3>TechSolutionCrib</h3>
-                    <p>Address: Nottingham UK</p>
-                    <p>Phone: 07069746252</p>
-                    <p>Membership Level: <span
-                            class="badge gold">Gold</span></p>
-                    <a href="https://www.techsolutioncrib.com"
-                        target="_blank">Details</a>
-                </section>
+        if (data) {
+            document.getElementById("displayName").textContent = data.fullName;
+            document.getElementById("displayEmail").textContent = data.email;
+            document.getElementById("displayPhone").textContent = data.phone;
+            document.getElementById("displayBusiness").textContent = data.businessName;
+            document.getElementById("displayLevel").textContent = data.membershipLevel;
+            document.getElementById("displayDescription").textContent = data.description;
+            document.getElementById("displayTimestamp").textContent = new Date(data.timestamp).toLocaleString();
+        } else {
+            document.querySelector(".thankyou-wrapper").innerHTML = "<p>No data found. Please fill out the form first.</p>";
+        }
 
-                <section>
-                    <img src="images/webgate_logo.jpg" alt="WebGate VTU APP" />
-                    <h3>WebGate VTU APP</h3>
-                    <p>Address: Nigeria</p>
-                    <p>Phone: 08144426681</p>
-                    <p>Membership Level: <span
-                            class="badge silver">Silver</span></p>
-                    <a href="https://www.sabuss.com/webgate"
-                        target="_blank">Details</a>
-                </section>
+    </script>
 
-                <section>
-                    <img src="images/lindaikeji.png" alt="ChuzyTech" />
-                    <h3>Linda Ikeji</h3>
-                    <p>Address: Nigeria</p>
-                    <p>Phone: 08060793756</p>
-                    <p>Membership Level: <span
-                            class="badge member">Member</span></p>
-                    <a href="https://www.lindaikejisblog.com"
-                        target="_blank">Details</a>
-                </section>
+    <footer>
+        <div class="footer-icons">
+            <a href="https://linkedin.com/in/yourlinkedin" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/chuzytech" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://x.com/yourxusername" target="_blank" aria-label="X Twitter">
+                <i class="fab fa-x-twitter"></i>
+            </a>
+        </div>
 
-                <section>
-                    <img src="images/rawhub.png" alt="RAWHUB" />
-                    <h3>RawHub</h3>
-                    <p>Address: Nigeria</p>
-                    <p>Phone: 09126244907</p>
-                    <p>Membership Level: <span
-                            class="badge  member">Member</span></p>
-                    <a href="https://www.rawtechgroups.com"
-                        target="_blank">Details</a>
-                </section>
+        <p>
+            &copy; <span id="year"></span> Oko Samuel Ogbonnia | Ebonyi
+            State,
+            Nigeria
+            <img src="https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg" alt="Nigerian Flag"
+                width="30" />
+        </p>
+        <p id="lastUpdate"></p>
+    </footer>
 
-                <section>
-                    <img src="images/naijaloaded.webp" alt="NAIJALOADED" />
-                    <h3>Naijaloaded</h3>
-                    <p>Address: Nigeria</p>
-                    <p>Phone: 08122336789</p>
-                    <p>Membership Level: <span
-                            class="badge gold">Gold</span></p>
-                    <a href="https://www.naijaloaded.com"
-                        target="_blank">Details</a>
-                </section>
+    <!-- Scripts -->
+    <script src="js/main.js"></script>
+    <script src="js/join.js"></script>
+</body>
 
-                <section>
-                    <img src="images/techcrunch.png" alt="TECHCRUNCH" />
-                    <h3>TechCrunch</h3>
-                    <p>Address: Nigeria</p>
-                    <p>Phone: 07044337914</p>
-                    <p>Membership Level: <span
-                            class="badge silver">Silver</span></p>
-                    <a href="https://www.techcrunch.com"
-                        target="_blank">Details</a>
-                </section>
-
-                <section>
-                    <img src="images/notjustok.png" alt="NotJustOk" />
-                    <h3>NotJustOk</h3>
-                    <p>Address: Nigeria</p>
-                    <p>Phone: 08034647929</p>
-                    <p>Membership Level: <span
-                            class="badge silver">Silver</span></p>
-                    <a href="https://www.notjustok.com"
-                        target="_blank">Details</a>
-                </section>
-
-                <section>
-                    <img src="images/nairaland.webp" alt="Nairaland" />
-                    <h3>Nairaland</h3>
-                    <p>Address: Nigeria</p>
-                    <p>Phone: 09034748938</p>
-                    <p>Membership Level: <span
-                            class="badge member">Member</span></p>
-                    <a href="https://www.nairaland.com"
-                        target="_blank">Details</a>
-                </section>
-
-                <section>
-                    <img src="images/legit.webp" alt="Legit" />
-                    <h3>Legit</h3>
-                    <p>Address: Nigeria</p>
-                    <p>Phone: 08034858810</p>
-                    <p>Membership Level: <span
-                            class="badge gold">Gold</span></p>
-                    <a href="https://www.legit.ng" target="_blank">Details</a>
-                </section>
-            </article>
-
-        </main>
-
-        <footer>
-            <div class="footer-icons">
-                <a href="https://linkedin.com/in/yourlinkedin" target="_blank"
-                    aria-label="LinkedIn">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/chuzytech" target="_blank"
-                    aria-label="GitHub">
-                    <i class="fab fa-github"></i>
-                </a>
-                <a href="https://x.com/yourxusername" target="_blank"
-                    aria-label="X Twitter">
-                    <i class="fab fa-x-twitter"></i>
-                </a>
-            </div>
-
-            <p>
-                &copy; <span id="year"></span> Oko Samuel Ogbonnia | Ebonyi
-                State,
-                Nigeria
-                <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg"
-                    alt="Nigerian Flag"
-                    width="30" />
-            </p>
-            <p id="lastUpdate"></p>
-        </footer>
-
-        <script src="js/main.js"></script>
-    </body>
 </html>
