@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+
+        <!-- Document Title -->
+        <title>WDD231 | Chamber of Commerce | Empowering Local
+            Businesses</title>
+
+        <!-- SEO Meta Tags -->
+        <meta name="description"
+            content="Welcome to the Chamber of Commerce. Empowering local businesses to connect, grow, and thrive through events, networking, and support." />
+        <meta name="author" content="Oko Samuel Ogbonnia" />
+        <meta name="keywords"
+            content="Chamber of Commerce, Business Directory, Local Business Support, Networking, Community, CHUZYTECH" />
+
+        <!-- Open Graph Meta Tags (Social Media Preview) -->
+        <meta property="og:title"
+            content="Chamber of Commerce | Grow Your Business" />
+        <meta property="og:description"
+            content="Join the Chamber of Commerce to connect with other local businesses and explore growth opportunities through events, directories, and collaboration." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url"
+            content="https://chuzytech.github.io/wdd231/chamber/index.html" />
+        <meta property="og:image"
+            content="https://chuzytech.github.io/wdd231/chamber/images/preview.png" />
+
+        <!-- Google Fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+            rel="stylesheet" />
+
+        <!-- Font Awesome Icons -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+        <!-- Favicon -->
+        <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/join.css" />
+
+    </head>
+    <body>
+
+        <header>
+            <img src="images/byu_logo.png" alt="BYU-I Logo" width="50"
+                height="50" />
+            <button id="hamburger" aria-label="Menu">&#9776;</button>
+        </header>
+
+        <nav id="primaryNav" class="hide">
+            <a href="index.html" class="active">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+        </nav>
+
+        <h1>Chamber of Commerce</h1>
+
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Empowering Local Businesses</h1>
+                    <p>Connect, grow, and thrive with our Chamber of
+                        Commerce.</p>
+                    <div class="cta">
+                        <a href="join.html">Join the Chamber</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="events">
+                <h2>Upcoming Events</h2>
+                <ul>
+                    <li>Business Networking – July 25</li>
+                    <li>Local Job Fair – August 1</li>
+                </ul>
+            </section>
+
+            <section class="weather">
+                <h2>Current Weather</h2>
+                <p id="weather-description">Loading weather...</p>
+                <p>Temperature: <span id="current-temp"></span>°C</p>
+                <div id="forecast">
+                    <h3>3-Day Forecast</h3>
+                    <ul id="forecast-list"></ul>
+                </div>
+            </section>
+
+            <section class="spotlight">
+                <h2>Company Spotlight</h2>
+                <div class="spotlight-container" id="spotlight-container"></div>
+            </section>
+
+            <!-- ✅ NEW MEMBERS DIRECTORY SECTION -->
+            <section class="directory">
+                <h2>Our Members</h2>
+                <div class="cards" id="members-container"></div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-icons">
+                <a href="https://linkedin.com/in/yourlinkedin" target="_blank"
+                    aria-label="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/chuzytech" target="_blank"
+                    aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://x.com/yourxusername" target="_blank"
+                    aria-label="X Twitter">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+            </div>
+
+            <p>
+                &copy; <span id="year"></span> Oko Samuel Ogbonnia | Ebonyi
+                State, Nigeria
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg"
+                    alt="Nigerian Flag" width="30" />
+            </p>
+            <p id="lastUpdate"></p>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="js/main.js"></script>
+        <script src="js/script.js"></script>
+        <script src="js/directory.js"></script>
+
+    </body>
+</html>
