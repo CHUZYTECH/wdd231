@@ -299,12 +299,11 @@ footer img {
 }
 
 .intro-section h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: #7b3e19;
   margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight: bold;
 }
 
 .intro-section p {
@@ -875,4 +874,5 @@ footer {
 .footer-icons a:hover {
   color: #c0392b;
 }
+
 
