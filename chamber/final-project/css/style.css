@@ -14,8 +14,13 @@ body {
   min-height: 100vh;
 }
 
-h1, h2, h3, h4, h5, h6 {
-   font-family: 'Playfair Display', serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Playfair Display', serif;
   margin: 0;
 }
 
@@ -196,12 +201,14 @@ footer img {
   text-align: center;
   margin: 30px auto;
 }
+
 .category-buttons {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
 }
+
 .category-buttons button {
   padding: 10px 20px;
   border: none;
@@ -211,6 +218,7 @@ footer img {
   border-radius: 20px;
   transition: background-color 0.3s;
 }
+
 .category-buttons button.active,
 .category-buttons button:hover {
   background-color: #f57c00;
@@ -228,38 +236,46 @@ footer img {
   background: white;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
 }
+
 .menu-card:hover {
   transform: translateY(-5px);
 }
+
 .menu-image {
   width: 100%;
   height: 200px;
   object-fit: cover;
 }
+
 .menu-content {
   padding: 15px;
 }
+
 .menu-title {
   margin: 0 0 10px;
   font-size: 18px;
   color: #333;
 }
+
 .menu-description {
   font-size: 14px;
   color: #666;
 }
+
 .menu-footer {
   margin-top: 10px;
   display: flex;
   justify-content: space-between;
   font-weight: bold;
 }
+
 .menu-price {
   color: #4caf50;
 }
+
 .menu-category {
   background-color: #eee;
   padding: 2px 8px;
@@ -267,14 +283,10 @@ footer img {
   font-size: 12px;
 }
 
-
-/* Price */
-
-
 /* Welcome Section Styles */
 .intro-section {
   background: linear-gradient(to right, #fff8f3, #fcebd5);
-  padding: 60px 20px;
+  padding: 20px 20px;
   text-align: center;
   border-bottom: 4px solid #e0b973;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -304,7 +316,7 @@ footer img {
   font-weight: 500;
 }
 
-.explore{
+.explore {
   margin-bottom: 30px;
 }
 
@@ -324,8 +336,6 @@ body {
   background-color: #fffdfa;
   color: #333;
 }
-
-/* Header */
 
 
 /* Hero Section */
@@ -517,15 +527,8 @@ body {
 .btn-submit:hover {
   background: #b8641f;
 }
-/*  */
 
-/* New Code */
-.menu-container {
-  display: grid;
-  gap: 1.5rem;
-  grid-template-columns: repeat(3, 1fr); /* fixed 3 columns */
-  margin-top: 2rem;
-}
+/*  */
 
 .menu-card {
   background: #fff;
@@ -641,8 +644,234 @@ body {
 /* Stack cards on small screens */
 @media (max-width: 768px) {
   #menu-container {
-    grid-template-columns: 1fr; /* single column */
+    grid-template-columns: 1fr;
+    /* single column */
   }
 }
 
 
+
+
+
+/* Simple centered container helper */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+
+
+/* ========= HERO / INTRO ========= */
+.hero {
+  background: url("https://source.unsplash.com/1600x800/?nigerian-food,restaurant") center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+.intro-section {
+  background: linear-gradient(to right, #fff8f3, #fcebd5);
+  padding: 40px 20px;
+  text-align: center;
+  border-bottom: 4px solid #e0b973;
+}
+
+/* ========= MENU HEADER / CONTROLS ========= */
+.menu-header {
+  text-align: center;
+  margin: 30px auto 10px;
+}
+
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.category-buttons button {
+  padding: 8px 16px;
+  border: none;
+  background-color: #ddd;
+  cursor: pointer;
+  font-weight: 700;
+  border-radius: 20px;
+  transition: background-color .2s;
+}
+
+.category-buttons button.active,
+.category-buttons button:hover {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+/* menu controls (search + sort) */
+.menu-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin: 18px 0 6px;
+}
+
+.menu-controls input[type="search"],
+.menu-controls select {
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1.5px solid #ddd;
+  font-family: inherit;
+  font-size: 1rem;
+  background: #fff;
+}
+
+/* ========= MENU GRID (3 in a row) ========= */
+/* use #menu-container (id in your HTML) and .menu-container (class) for safety */
+#menu-container,
+.menu-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 columns on large screens */
+  gap: 24px;
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* card styles - match either .menu-card or .card to be safe */
+.menu-card,
+.card,
+.menu-item {
+  /* added .menu-item just in case */
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+/* hover lift */
+.menu-card:hover,
+.card:hover,
+.menu-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.12);
+}
+
+.menu-card img,
+.card img,
+.menu-item img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* content inside card */
+.menu-info,
+.card-body,
+.menu-content {
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1 1 auto;
+}
+
+.menu-info h3,
+.card h3,
+.menu-content h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  margin: 0;
+  color: #2d2d2d;
+}
+
+.menu-info .desc,
+.card p,
+.menu-content p {
+  color: #5b5b5b;
+  font-size: 0.95rem;
+  flex: 1 1 auto;
+}
+
+.menu-footer,
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 14px 14px;
+  font-weight: 700;
+  color: #333;
+}
+
+.menu-price {
+  color: #4caf50;
+  font-weight: 700;
+}
+
+/* small category pill */
+.menu-pill {
+  background: #eee;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 0.8rem;
+}
+
+/* ========= RESPONSIVE ========= */
+@media (max-width: 991.98px) {
+
+  #menu-container,
+  .menu-container {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns on medium screens */
+  }
+}
+
+@media (max-width: 599.98px) {
+
+  #menu-container,
+  .menu-container {
+    grid-template-columns: 1fr;
+    /* 1 column on small screens */
+    padding: 16px;
+  }
+
+  .hero {
+    padding: 60px 16px;
+  }
+
+  .menu-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+/* ========= FOOTER ========= */
+footer {
+  background-color: #e67e22;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.footer-icons {
+  margin-bottom: 0.5rem;
+}
+
+.footer-icons a {
+  margin: 0 0.5rem;
+  font-size: 1.4rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-icons a:hover {
+  color: #c0392b;
+}
