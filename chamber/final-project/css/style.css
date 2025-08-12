@@ -286,7 +286,7 @@ footer img {
 /* Welcome Section Styles */
 .intro-section {
   background: linear-gradient(to right, #fff8f3, #fcebd5);
-  padding: 20px 20px;
+  /* padding: 10px 10px; */
   text-align: center;
   border-bottom: 4px solid #e0b973;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -295,15 +295,16 @@ footer img {
 .intro-section .container {
   max-width: 900px;
   margin: 0 auto;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .intro-section h1 {
-  font-size: 2rem;
+  font-size: 1.8rem;
   color: #7b3e19;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   text-transform: uppercase;
   letter-spacing: 2px;
+  font-weight: bold;
 }
 
 .intro-section p {
@@ -451,7 +452,7 @@ body {
 .contact-section h2 {
   font-family: 'Playfair Display', serif;
   font-size: 2.8rem;
-  color: #7a4e2c;
+  color: #7b3e19;
   margin-bottom: 20px;
 }
 
@@ -874,5 +875,3 @@ footer {
 .footer-icons a:hover {
   color: #c0392b;
 }
-
-
