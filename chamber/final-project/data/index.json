@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Nkwobi",
+    "price": 20,
+    "category": "Delicacy",
+    "description": "Spicy cow foot delicacy served in a rich palm oil sauce.",
+    "image": "images/nkwobi.png"
+  },
+  {
+    "id": 2,
+    "name": "Goat Meat Pepper Soup",
+    "price": 18,
+    "category": "Soup",
+    "description": "Hot and spicy pepper soup made with tender goat meat.",
+    "image": "images/goat_meat.png"
+  },
+  {
+    "id": 3,
+    "name": "Jollof Rice",
+    "price": 12,
+    "category": "Main",
+    "description": "Classic Nigerian spicy tomato rice.",
+    "image": "images/nigerian_Jollof.png"
+  },
+  {
+    "id": 4,
+    "name": "Egusi Soup",
+    "price": 15,
+    "category": "Soup",
+    "description": "Traditional melon seed soup with assorted meat and vegetables.",
+    "image": "images/egusi_soup.png"
+  },
+  {
+    "id": 5,
+    "name": "Fried Plantain",
+    "price": 6,
+    "category": "Delicacy",
+    "description": "Sweet fried ripe plantains, perfect side dish.",
+    "image": "images/fried_plantain.png"
+  },
+  {
+    "id": 6,
+    "name": "Pounded Yam",
+    "price": 8,
+    "category": "Delicacy",
+    "description": "Classic pounded yam, great with soups.",
+    "image": "images/pounded.png"
+  }
+]
