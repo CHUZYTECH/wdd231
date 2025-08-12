@@ -320,10 +320,12 @@ footer {
   text-align: center;
   padding: 1.5rem 1rem;
   font-size: 0.9rem;
+  text-decoration: none;
 }
 
 .footer-icons {
   margin-bottom: 0.8rem;
+  text-decoration: none;
 }
 
 .footer-icons a {
@@ -392,3 +394,4 @@ footer {
   }
 
 }
+
