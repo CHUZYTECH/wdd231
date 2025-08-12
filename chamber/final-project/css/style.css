@@ -177,6 +177,7 @@ footer {
 
 .footer-icons {
   margin-bottom: 0.5rem;
+  text-decoration: none;
 }
 
 .footer-icons a {
@@ -649,18 +650,12 @@ body {
   }
 }
 
-
-
-
-
 /* Simple centered container helper */
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 16px;
 }
-
-
 
 /* ========= HERO / INTRO ========= */
 .hero {
@@ -863,6 +858,7 @@ footer {
 
 .footer-icons {
   margin-bottom: 0.5rem;
+  text-decoration: none;
 }
 
 .footer-icons a {
@@ -875,3 +871,4 @@ footer {
 .footer-icons a:hover {
   color: #c0392b;
 }
+
