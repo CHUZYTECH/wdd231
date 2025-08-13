@@ -1,0 +1,86 @@
+[
+  {
+    "name": "City Library",
+    "address": "654 Knowledge Rd, YourCity",
+    "description": "Books, digital media, and community events for all ages.",
+    "image": "https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&h=600&q=80&fm=webp",
+    "website": "https://www.example.com/citylibrary"
+  },
+  {
+    "name": "City Park",
+    "address": "123 Main St, YourCity",
+    "description": "A vibrant public park with walking trails, picnic areas, and playgrounds.",
+    "image": "https://images.unsplash.com/photo-1508606572321-901ea443707f?auto=format&fit=crop&w=800&h=600&q=80&fm=webp",
+    "website": "https://www.example.com/citypark"
+  },
+  {
+    "name": "Farmers Market",
+    "address": "789 Market St, YourCity",
+    "description": "Fresh produce, local crafts, and live entertainment every weekend.",
+    "image": "https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=800&h=600&q=80&fm=webp",
+    "website": "https://www.example.com/farmersmarket"
+  },
+  {
+    "name": "Community Theater",
+    "address": "321 Stage Blvd, YourCity",
+    "description": "Experience local plays, musicals, and performances year-round.",
+    "image": "https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=800&h=600&q=80&fm=webp",
+    "website": "https://www.example.com/communitytheater"
+  },
+  {
+    "name": "Waterfront Promenade",
+    "address": "987 Riverbank Dr, YourCity",
+    "description": "Scenic views, dining, and shopping by the water.",
+    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&h=600&q=80&fm=webp",
+    "website": "https://www.example.com/waterfront"
+  },
+  {
+    "name": "Botanical Gardens",
+    "address": "159 Greenhouse Ln, YourCity",
+    "description": "Beautiful plant collections and serene walking trails.",
+    "image": "https://images.unsplash.com/photo-1498654896293-37aacf113fd9?auto=format&fit=crop&w=800&h=600&q=80&fm=webp",
+    "website": "https://www.example.com/botanicalgardens"
+  },
+  {
+    "name": "Sports Complex",
+    "address": "753 Victory Way, YourCity",
+    "description": "Facilities for soccer, basketball, and other activities.",
+    "image": "https://images.unsplash.com/photo-1517649763962-0c623066013b?auto=format&fit=crop&w=800&h=600&q=80&fm=webp",
+    "website": "https://www.example.com/sportscomplex"
+  },
+  {
+    "name": "Art Gallery",
+    "address": "852 Canvas St, YourCity",
+    "description": "A hub for contemporary and classical art exhibitions.",
+    "image": "https://images.unsplash.com/photo-1500336624523-d727130c3328?auto=format&fit=crop&w=800&h=600&q=80&fm=webp",
+    "website": "https://www.example.com/artgallery"
+  },
+  {
+    "name": "Music Hall",
+    "address": "369 Melody St, YourCity",
+    "description": "Concerts and performances from local and global artists.",
+    "image": "https://images.unsplash.com/photo-1507874457470-272b3c8d8ee2?auto=format&fit=crop&w=800&h=600&q=80&fm=webp",
+    "website": "https://www.example.com/musichall"
+  },
+  {
+    "name": "Amusement Park",
+    "address": "951 Funland Ave, YourCity",
+    "description": "Thrilling rides, games, and family entertainment.",
+    "image": "https://images.unsplash.com/photo-1509223197845-458d87318791?auto=format&fit=crop&w=800&h=600&q=80&fm=webp",
+    "website": "https://www.example.com/amusementpark"
+  },
+  {
+    "name": "Beach Resort",
+    "address": "Sunset Blvd, YourCity",
+    "description": "Relax and unwind at the sunny shoreline.",
+    "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&h=600&q=80&fm=webp",
+    "website": "https://www.example.com/beachresort"
+  },
+  {
+    "name": "Open Air Cinema",
+    "address": "Movie Park Rd, YourCity",
+    "description": "Watch films under the stars in a cozy outdoor setup.",
+    "image": "https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=800&h=600&q=80&fm=webp",
+    "website": "https://www.example.com/openaircinema"
+  }
+]
